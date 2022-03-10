@@ -1,0 +1,1291 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* mobile */
+
+@media only screen and (max-width: 767px) {
+    /* INICIO HEADER INDEX */
+    .container__grid {
+        display: grid;
+        grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr;
+        grid-template-rows: repeat(4fr);
+        grid-template-areas: "header header header""aside aside aside""main main main""footer footer footer";
+    }
+    .header {
+        grid-area: header;
+    }
+    .header__nav {
+        background: rgb(255, 255, 255, 0.8);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header__nav img {
+        margin-left: 0.5rem;
+        object-fit: cover;
+    }
+    .header__menu li {
+        display: inline-block;
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-right: 0.5rem;
+    }
+    .header__menu li a {
+        color: rgba(91, 91, 95, 0.80);
+    }
+    .header__nav li a:hover {
+        color: rgba(76, 88, 160, 0.80);
+        font-weight: 500;
+    }
+    /* FIN HEADER INDEX */
+    /* INICIO ASIDE INDEX */
+    .aside {
+        grid-column: x0/x2;
+        grid-area: aside;
+    }
+    .banner {
+        object-fit: cover;
+        position: relative;
+    }
+    .banner__img {
+        width: 100%;
+        max-height: 100%;
+    }
+    .banner__advertisement {
+        position: absolute;
+        top: 47%;
+        left: 40%;
+        background-color: rgba(238, 238, 238, 0.57);
+        width: 22rem;
+        border-radius: 4rem;
+        line-height: 1.4;
+    }
+    .banner__advertisement h1 {
+        color: rgb(76, 88, 160);
+        font-size: 0.9rem;
+        font-weight: 700;
+        padding: 1.2rem 0 0 1.2rem;
+    }
+    .banner__advertisement h2 {
+        color: rgb(3, 190, 202);
+        font-size: 0.7rem;
+        font-weight: 700;
+        padding: 0.5rem 0 1rem 1.2rem;
+    }
+    .banner__button {
+        position: absolute;
+        top: 55%;
+        left: 72%;
+    }
+    .banner__button a {
+        color: #fff;
+        font-size: 0.6rem;
+        font-weight: 400;
+        border: 0.6rem solid #03BECA;
+        border-radius: 20px;
+        background: #03BECA;
+    }
+    .banner__button a:hover {
+        border: 0.7rem solid #4C58A0;
+        background: #4C58A0;
+    }
+    /* FIN ASIDE INDEX */
+    /* INICIO MAIN INDEX */
+    .main {
+        grid-column: x0/x2;
+        grid-area: main;
+    }
+    .main__buscador {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__buscador h3 {
+        color: rgba(91, 91, 95, 0.80);
+        font-weight: 500;
+        margin: 30px 0 60px 0;
+    }
+    .main__buscador__box {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .main__buscador__box i {
+        font-size: 2rem;
+        color: rgba(91, 91, 95, 0.80);
+    }
+    .main__button {
+        margin-top: 8%;
+    }
+    .main__button a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 400;
+        border: 15px solid #03BECA;
+        border-radius: 20px;
+        background: #03BECA;
+    }
+    .main__button a:hover {
+        border: 15px solid #4C58A0;
+        background: #4C58A0;
+    }
+    /* FIN MAIN INDEX */
+    /* FOOTER INDEX  */
+    .footer {
+        grid-area: footer;
+    }
+    .footer__fondo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: rgb(76, 88, 160);
+        margin-top: 4rem;
+        padding: 1rem 1rem;
+        ;
+    }
+    .footer__content {
+        display: none;
+    }
+    .footer__piePagina {
+        grid-column: x1/x1;
+        display: flex;
+        align-items: end;
+    }
+    .footer__piePagina p {
+        font-size: 0.8rem;
+        color: #fff;
+    }
+    .footer__redesSociales {
+        grid-column: x2/x2;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .footer__redesSociales a {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        color: #fff;
+        border: 1px solid white;
+        border-radius: 50%;
+        text-align: center;
+        margin: 10px 10px 0 0;
+    }
+    .footer__redesSociales i {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .footer__redesSociales a:hover {
+        background: #fff;
+        color: #445e7a;
+    }
+    /* FIN FOOTER INDEX  */
+
+      /* INICIO MAIN PAGINA COTIZACION */
+      .cotizacion__titulo h1 {
+        font-weight: 700;
+        color: #03BECA;
+        padding: 1rem 1rem;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .cotizacion__section {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 1rem;
+    }
+    .cotizacion__producto {
+        border: 2px solid rgb(238, 238, 238);
+        border-radius: 1rem;
+        text-align: center;
+        
+    }
+    .cotizacion__img {
+        margin: 1rem 0 0 1rem;
+                
+    }
+    .cotizacion__detalle__producto {
+        padding: 0.6rem 0.6rem;
+    }
+    .cotizacion__detalle__producto h2,
+    p {
+        color: #5B5B5F;
+    }
+    .cotizacion__cantidad {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 20%;
+        gap: 0.5rem;
+        border: 1px solid rgb(238, 238, 238);
+        border-radius: 1rem;
+        padding: 0.3rem 0.3rem;
+        margin-right: 0%;
+        float: right;
+        margin: 0 1rem 1rem 0;
+    }
+    .cotizacion__condicionesVta {
+        border: 2px solid rgb(238, 238, 238);
+        border-radius: 1rem;
+        
+    }
+    .cotizacion__condicionesVta h2 {
+        color: #5B5B5F;
+        font-weight: 400;
+        text-align: end;
+        margin-right: 8%;
+        padding-top: 1rem;
+    }
+
+    .none{
+        display: none;
+    }
+    table {
+        text-align: left;
+        width: 100%;
+    }
+    .table__titulo {
+        float: left;
+        margin: 0;
+        width: 80%;
+        color: #4C58A0;
+        font-weight: 500;
+    }
+    .table__fondo {
+        background-color: rgba(238, 238, 238, 0.5);
+        border-radius: 15px;
+    }
+    .table__button {
+        color: #fff;
+        font-size: 0.8rem;
+        font-weight: 400;
+        border: 0.5rem solid #03BECA;
+        border-radius: 20px;
+        background: #03BECA;
+    }
+    .table__button a:hover {
+        border: 0.5rem solid #4C58A0;
+        background: #4C58A0;
+    }
+    .table__formato {
+        color: rgb(91, 91, 95);
+        
+    }
+    th,
+    td {
+        padding: 13px;
+        
+    }
+    /* FIN MAIN PAGINA COTIZACION */
+
+
+    /* INICIO MAIN PAGINA SERVICIOS */
+
+    .main__servicios{
+        background-color: #4C58A0;
+        margin: 1rem 1rem 0 1rem;
+        padding: 1rem 1rem; 
+        border: 2px solid rgb(238, 238, 238);
+        border-radius: 1rem;
+           
+    }
+
+    .main__servicios h2{
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .container__grid__servicios{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "container__grid_servicios1"
+        "container__grid_servicios2"
+        "container__grid_servicios3"
+        "container__grid_servicios4"
+        "container__grid_servicios5";
+        border: 2px solid rgb(238, 238, 238);
+        border-radius: 1rem;
+        padding: 2rem 2rem;
+        margin: 2rem 1rem 2rem 1rem;
+        
+              
+       
+    }
+
+       
+    .container__grid__servicios1{
+        grid-area:container__grid__servicios1;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        
+            
+              
+    }
+
+    .container__grid__servicios2{
+        grid-area:container__grid__servicios2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        
+        
+    }
+
+    .container__grid__servicios3{
+        grid-area:container__grid__servicios3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        
+        
+    }
+
+    .container__grid__servicios4{
+        grid-area:container__grid__servicios1;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        
+        
+    }
+
+    .container__grid__servicios5{
+        grid-area:container__grid__servicios1;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        
+        
+       
+    }
+
+   .borde{
+        
+        border: 3px solid #03BECA;
+        border-radius: 12px;
+        padding: 1rem 1rem;
+        text-align: center;
+        transition: all 1s;
+        width: 10rem;
+        height: 10rem;
+        
+   }
+
+   .borde:hover{
+       transform: scale(1.1);
+   }
+    
+    /* FIN MAIN PAGINA SERVICIOS */
+}
+
+
+/* tablet */
+
+@media only screen and (min-width: 768px) {
+    .container__grid {
+        display: grid;
+        grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
+        grid-template-rows: repeat(4fr);
+        grid-template-areas: "header header header""aside aside aside""main main main""footer footer footer";
+    }
+    /* INICIO HEADER INDEX */
+    .header {
+        grid-area: header;
+    }
+    .header__nav {
+        background: rgb(255, 255, 255, 0.8);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header__nav img {
+        margin-left: 2rem;
+    }
+    .header__menu li {
+        display: inline-block;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-right: 1rem;
+    }
+    .header__menu li a {
+        color: rgba(91, 91, 95, 0.80);
+    }
+    .header__nav li a:hover {
+        color: rgba(76, 88, 160, 0.80);
+        font-weight: 700;
+    }
+    /* FIN HEADER INDEX */
+    /* INICIO ASIDE INDEX */
+    .aside {
+        grid-column: x0/x3;
+        grid-area: aside;
+    }
+    .banner {
+        object-fit: cover;
+        position: relative;
+    }
+    .banner__img {
+        width: 100%;
+        max-height: 100%;
+    }
+    .banner__advertisement {
+        position: absolute;
+        top: 47%;
+        left: 40%;
+        background-color: rgba(238, 238, 238, 0.57);
+        width: 28rem;
+        border-radius: 4rem;
+        line-height: 1.4;
+    }
+    .banner__advertisement h1 {
+        color: rgb(76, 88, 160);
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 1.25rem 0 0 1.875rem;
+    }
+    .banner__advertisement h2 {
+        color: rgb(3, 190, 202);
+        font-size: 0.8rem;
+        font-weight: 700;
+        padding: 10px 0 20px 40px;
+    }
+    .banner__button {
+        position: absolute;
+        top: 58%;
+        left: 75%;
+    }
+    .banner__button a {
+        color: #fff;
+        font-size: 0.6rem;
+        font-weight: 400;
+        border: 0.6rem solid #03BECA;
+        border-radius: 20px;
+        background: #03BECA;
+    }
+    .banner__button a:hover {
+        border: 0.6rem solid #4C58A0;
+        background: #4C58A0;
+    }
+    /* FIN ASIDE INDEX */
+    /* INICIO MAIN INDEX */
+    .main {
+        grid-column: x0/x3;
+        grid-area: main;
+    }
+    .main__buscador {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__buscador h3 {
+        color: rgba(91, 91, 95, 0.80);
+        font-weight: 500;
+        margin: 30px 0 60px 0;
+    }
+    .main__buscador__box {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .main__buscador__box i {
+        font-size: 2rem;
+        color: rgba(91, 91, 95, 0.80);
+    }
+    .main__button {
+        margin-top: 8%;
+    }
+    .main__button a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 400;
+        border: 15px solid #03BECA;
+        border-radius: 20px;
+        background: #03BECA;
+    }
+    .main__button a:hover {
+        border: 15px solid #4C58A0;
+        background: #4C58A0;
+    }
+    /* FIN MAIN INDEX */
+    /* FOOTER INDEX  */
+    .footer {
+        grid-area: footer;
+    }
+    .footer__fondo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: rgb(76, 88, 160);
+        margin-top: 4rem;
+        padding: 1rem 1rem;
+        ;
+    }
+    .footer__content {
+        grid-column: x1/x1;
+        color: #fff;
+        font-weight: 400;
+        line-height: 1.8;
+        margin: 8px 0 0 8px;
+        font-size: 0.8rem;
+    }
+    .footer__content li {
+        margin-left: 1.2rem;
+        list-style-type: square;
+    }
+    .footer__piePagina {
+        display: flex;
+        align-items: end;
+        align-content: center;
+    }
+    .footer__piePagina p {
+        font-size: 0.5rem;
+        color: #fff;
+    }
+    .footer__redesSociales {
+        grid-column: x3/x3;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .footer__redesSociales a {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        color: #fff;
+        border: 1px solid white;
+        border-radius: 50%;
+        text-align: center;
+        margin: 10px 10px 0 0;
+    }
+    .footer__redesSociales i {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .footer__redesSociales a:hover {
+        background: #fff;
+        color: #445e7a;
+    }
+    /* FIN FOOTER INDEX  */
+
+    /* INICIO MAIN PAGINA COTIZACION */
+    .cotizacion__titulo h1 {
+        font-weight: 700;
+        color: #03BECA;
+        padding: 1rem 1rem;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .cotizacion__section {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 1rem;
+    }
+    .cotizacion__producto {
+        border: 2px solid rgb(238, 238, 238);
+        border-radius: 1rem;
+        text-align: center;
+        
+    }
+    .cotizacion__img {
+        margin: 1rem 0 0 1rem;
+                
+    }
+    .cotizacion__detalle__producto {
+        padding: 0.6rem 0.6rem;
+    }
+    .cotizacion__detalle__producto h2,
+    p {
+        color: #5B5B5F;
+    }
+    .cotizacion__cantidad {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 20%;
+        gap: 0.5rem;
+        border: 1px solid rgb(238, 238, 238);
+        border-radius: 1rem;
+        padding: 0.3rem 0.3rem;
+        margin-right: 0%;
+        float: right;
+        margin: 0 1rem 1rem 0;
+    }
+    .cotizacion__condicionesVta {
+        border: 2px solid rgb(238, 238, 238);
+        border-radius: 1rem;
+        
+    }
+    .cotizacion__condicionesVta h2 {
+        color: #5B5B5F;
+        font-weight: 400;
+        text-align: end;
+        margin-right: 8%;
+        padding-top: 1rem;
+    }
+
+    .none{
+        display: none;
+    }
+    table {
+        text-align: left;
+        width: 100%;
+    }
+    .table__titulo {
+        float: left;
+        margin: 0;
+        width: 40%;
+        color: #4C58A0;
+        font-weight: 500;
+    }
+    .table__fondo {
+        background-color: rgba(238, 238, 238, 0.5);
+        border-radius: 15px;
+    }
+    .table__button {
+        color: #fff;
+        font-size: 0.8rem;
+        font-weight: 400;
+        border: 0.5rem solid #03BECA;
+        border-radius: 20px;
+        background: #03BECA;
+    }
+    .table__button a:hover {
+        border: 0.5rem solid #4C58A0;
+        background: #4C58A0;
+    }
+    .table__formato {
+        color: rgb(91, 91, 95);
+        
+    }
+    th,
+    td {
+        padding: 13px;
+        
+    }
+    /* FIN MAIN PAGINA COTIZACION */
+    
+    /* INICIO MAIN PAGINA SERVICIOS */
+
+    .main__servicios{
+        background-color: #4C58A0;
+        margin: 1rem 1rem 0 1rem;
+        padding: 1rem 1rem; 
+        border: 2px solid rgb(238, 238, 238);
+        border-radius: 1rem;
+           
+    }
+
+    .main__servicios h2{
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .container__grid__servicios{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "container__grid_servicios1"
+        "container__grid_servicios2"
+        "container__grid_servicios3"
+        "container__grid_servicios4"
+        "container__grid_servicios5";
+        border: 2px solid rgb(238, 238, 238);
+        border-radius: 1rem;
+        padding: 2rem 2rem;
+        margin: 2rem 1rem 2rem 1rem;
+        
+              
+       
+    }
+
+       
+    .container__grid__servicios1{
+        grid-area:container__grid__servicios1;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        
+            
+              
+    }
+
+    .container__grid__servicios2{
+        grid-area:container__grid__servicios2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        
+        
+    }
+
+    .container__grid__servicios3{
+        grid-area:container__grid__servicios3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        
+        
+    }
+
+    .container__grid__servicios4{
+        grid-area:container__grid__servicios1;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        
+        
+    }
+
+    .container__grid__servicios5{
+        grid-area:container__grid__servicios1;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        
+        
+       
+    }
+
+   .borde{
+        
+        border: 3px solid #03BECA;
+        border-radius: 12px;
+        padding: 1rem 1rem;
+        text-align: center;
+        transition: all 1s;
+        width: 10rem;
+        height: 10rem;
+        
+   }
+
+   .borde:hover{
+       transform: scale(1.2);
+   }
+    
+    /* FIN MAIN PAGINA SERVICIOS */
+}
+
+
+/* Desktop */
+
+@media only screen and (min-width: 1024px) {
+    .container__grid {
+        display: grid;
+        grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
+        grid-template-rows: repeat(4fr);
+        grid-template-areas: "header header header""aside aside aside""main main main""footer footer footer";
+    }
+    /* INICIO HEADER INDEX */
+    .header {
+        grid-area: header;
+    }
+    .header__nav {
+        background: rgb(255, 255, 255, 0.8);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header__nav img {
+        margin-left: 3rem;
+    }
+    .header__menu li {
+        display: inline-block;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-right: 3rem;
+    }
+    .header__menu li a {
+        color: rgba(91, 91, 95, 0.80);
+    }
+    .header__nav li a:hover {
+        color: rgba(76, 88, 160, 0.80);
+        font-weight: 700;
+    }
+    /* FIN HEADER INDEX */
+    /* INICIO ASIDE INDEX */
+    aside {
+        grid-column: x0/x3;
+        grid-area: aside;
+    }
+    .banner {
+        object-fit: cover;
+        position: relative;
+    }
+    .banner__img {
+        width: 100%;
+        max-height: 100%;
+    }
+    .banner__advertisement {
+        position: absolute;
+        top: 47%;
+        left: 40%;
+        background-color: rgba(238, 238, 238, 0.57);
+        width: 38rem;
+        border-radius: 4rem;
+        line-height: 1.4;
+    }
+    .banner__advertisement h1 {
+        color: rgb(76, 88, 160);
+        font-size: 1.4rem;
+        font-weight: 700;
+        padding: 1.25rem 0 0 1.875rem;
+    }
+    .banner__advertisement h2 {
+        color: rgb(3, 190, 202);
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 10px 0 20px 40px;
+    }
+    .banner__button {
+        position: absolute;
+        top: 65%;
+        left: 75%;
+    }
+    .banner__button a {
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 400;
+        border: 0.6rem solid #03BECA;
+        border-radius: 20px;
+        background: #03BECA;
+    }
+    .banner__button a:hover {
+        border: 0.6rem solid #4C58A0;
+        background: #4C58A0;
+    }
+    /* FIN ASIDE INDEX */
+    /* INICIO MAIN INDEX */
+    .main {
+        grid-column: x0/x3;
+        grid-area: main;
+    }
+    .main__buscador {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1rem 1rem;
+        ;
+    }
+    .main__buscador h3 {
+        color: rgba(91, 91, 95, 0.80);
+        font-weight: 500;
+        margin: 30px 0 60px 0;
+    }
+    .main__buscador__box {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .main__buscador__box i {
+        font-size: 2rem;
+        color: rgba(91, 91, 95, 0.80);
+    }
+    .main__button {
+        margin-top: 6%;
+        width: auto;
+    }
+    .main__button a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 400;
+        border: 15px solid #03BECA;
+        border-radius: 20px;
+        background: #03BECA;
+        font-size: 1rem;
+    }
+    .main__button a:hover {
+        border: 15px solid #4C58A0;
+        background: #4C58A0;
+    }
+    /* FIN MAIN INDEX */
+    /* FOOTER INDEX  */
+    .footer {
+        grid-area: footer;
+    }
+    .footer__fondo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: rgb(76, 88, 160);
+        margin-top: 4rem;
+        padding: 1rem 1rem;
+        ;
+    }
+    .footer__content {
+        grid-column: x1/x1;
+        color: #fff;
+        font-weight: 400;
+        line-height: 1.8;
+        margin: 8px 0 0 8px;
+        font-size: 1rem;
+    }
+    .footer__content li {
+        margin-left: 1.2rem;
+        list-style-type: square;
+    }
+    .footer__piePagina {
+        display: flex;
+        align-items: end;
+        align-content: center;
+    }
+    .footer__piePagina p {
+        font-size: 0.8rem;
+        color: #fff;
+    }
+    .footer__redesSociales {
+        grid-column: x3 x3;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .footer__redesSociales a {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        color: #fff;
+        border: 1px solid white;
+        border-radius: 50%;
+        text-align: center;
+        margin: 10px 10px 0 0;
+    }
+    .footer__redesSociales i {
+        font-size: 35px;
+        line-height: 60px;
+    }
+    .footer__redesSociales a:hover {
+        background: #fff;
+        color: #445e7a;
+    }
+    /* FIN FOOTER INDEX  */
+    /* INICIO MAIN PAGINA COTIZACION */
+    .cotizacion__titulo h1 {
+        font-weight: 700;
+        color: #03BECA;
+        padding: 1rem 1rem;
+        text-align: center;
+    }
+    .cotizacion__section {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 1rem 1rem;
+    }
+    .cotizacion__producto {
+        border: 2px solid rgb(238, 238, 238);
+        border-radius: 1rem;
+        width: 20%;
+    }
+    .cotizacion__img {
+        margin: 1rem 0 0 1rem;
+    }
+    .cotizacion__detalle__producto {
+        padding: 0.6rem 0.6rem;
+    }
+    .cotizacion__detalle__producto h2,
+    p {
+        color: #5B5B5F;
+    }
+    .cotizacion__cantidad {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 40%;
+        gap: 0.5rem;
+        border: 1px solid rgb(238, 238, 238);
+        border-radius: 1rem;
+        padding: 0.3rem 0.3rem;
+        margin-right: 0%;
+        float: right;
+        margin: 0 1rem 1rem 0;
+    }
+    .cotizacion__condicionesVta {
+        border: 2px solid rgb(238, 238, 238);
+        border-radius: 1rem;
+        width: 80%;
+    }
+    .cotizacion__condicionesVta h2 {
+        color: #5B5B5F;
+        font-weight: 500;
+        text-align: end;
+        margin-right: 25%;
+        padding-top: 1rem;
+    }
+
+    .none{
+        visibility: visible;
+    }
+    table {
+        text-align: left;
+        width: 100%;
+    }
+    .table__titulo {
+        float: left;
+        margin: 0;
+        width: 80%;
+        color: #4C58A0;
+        font-weight: 500;
+    }
+    .table__fondo {
+        background-color: rgba(238, 238, 238, 0.5);
+        border-radius: 15px;
+    }
+    .table__button {
+        color: #fff;
+        font-size: 0.8rem;
+        font-weight: 400;
+        border: 0.5rem solid #03BECA;
+        border-radius: 20px;
+        background: #03BECA;
+    }
+    .table__button a:hover {
+        border: 0.5rem solid #4C58A0;
+        background: #4C58A0;
+    }
+    .table__formato {
+        color: rgb(91, 91, 95);
+        
+    }
+    th,
+    td {
+        padding: 13px;
+        
+    }
+    /* FIN MAIN PAGINA COTIZACION */
+    
+    /* INICIO MAIN PAGINA SERVICIOS */
+
+    .main__servicios{
+        background-color: #4C58A0;
+        margin: 1rem 1rem 0 1rem;
+        padding: 1rem 1rem; 
+        border: 2px solid rgb(238, 238, 238);
+        border-radius: 1rem;   
+    }
+
+    .main__servicios h2{
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .container__grid__servicios{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "container__grid_servicios1"
+        "container__grid_servicios2"
+        "container__grid_servicios3"
+        "container__grid_servicios4"
+        "container__grid_servicios5";
+        border: 2px solid rgb(238, 238, 238);
+        border-radius: 1rem;
+        padding: 2rem 2rem;
+        margin: 2rem 1rem 2rem 1rem;
+        
+              
+       
+    }
+
+       
+    .container__grid__servicios1{
+        grid-area:container__grid__servicios1;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        
+            
+              
+    }
+
+    .container__grid__servicios2{
+        grid-area:container__grid__servicios2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        
+        
+    }
+
+    .container__grid__servicios3{
+        grid-area:container__grid__servicios3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        
+        
+    }
+
+    .container__grid__servicios4{
+        grid-area:container__grid__servicios1;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        
+        
+    }
+
+    .container__grid__servicios5{
+        grid-area:container__grid__servicios1;
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        
+        
+       
+    }
+
+   .borde{
+        
+        border: 3px solid #03BECA;
+        border-radius: 12px;
+        padding: 1rem 1rem;
+        text-align: center;
+        transition: all 1s;
+        width: 10rem;
+        height: 10rem;
+        
+   }
+
+   .borde:hover{
+       transform: scale(1.3);
+   }
+    
+    /* FIN MAIN PAGINA SERVICIOS */
+
+    /* INICIO MAIN PAGINA PEDIDOS */
+
+    .main__ruta{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .main__ruta hr{
+        height: 0.2rem;
+        background-color: #5865B6;
+    }
+
+    .main__producto{
+        display: flex;
+        padding: 0 1rem;
+    }
+
+    .main__titulo{
+        color: #4C58A0;
+        font-weight: 500;
+        margin: 1rem 3.5rem;
+    }
+    
+    .main__detalle__medicina{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid rgb(238, 238, 238);
+        border-radius: 1rem;
+        width: 53%;
+        padding: 1rem 1rem;
+        margin-left: 2rem;
+        
+    }
+
+    .main__medicina{
+        padding: 1rem 1rem;
+    }
+
+    .main__medicina h2{
+        color: #5B5B5F;
+        margin: 0;
+    }
+    .main__medicina hr{
+        margin-top: 3rem;
+    }
+
+    .main__precio{
+        
+        line-height: 1.5rem;
+    }
+
+    .main__precio h2{
+        color: #03BECA;
+        font-weight: 400;
+        margin-right: 0.5rem;
+    }
+
+   
+
+    .main__cantidad {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 85%;
+        gap: 0.5rem;
+        border: 1px solid rgb(238, 238, 238);
+        border-radius: 1rem;
+        padding: 0.3rem 0.3rem;
+        margin-top: 3rem;
+            
+    }
+
+
+    .main__resumen{
+        border: 2px solid rgb(238, 238, 238);
+        border-radius: 1rem;
+        margin-left: 3rem;
+        width: 30%;
+        padding: 0.5rem 0.5rem;
+        justify-content: space-around
+    }
+
+    .main__resumen h2{
+        padding: 1rem 1rem;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .main__resumen h2, table{
+        color:#5B5B5F;
+        line-height: 0.5rem;
+    }
+
+    
+    .main__button__resumen{
+        text-align: center;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    .main__button__resumen a{
+        
+        color: #fff;
+        font-weight: 400;
+        border: 10px solid #03BECA;
+        border-radius: 20px;
+        background: #03BECA;
+        
+
+    }
+
+    .main__button__resumen a:hover {
+        border: 10px solid #4C58A0;
+        background: #4C58A0;
+    }
+
+    /* FIN MAIN PAGINA PEDIDOS */
+}
