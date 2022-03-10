@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RedFarma.co</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="../img/favicon.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,12 +34,13 @@
     <main>
 
         <section class="main__ruta">
-            <div>
+            <div data-aos="flip-up"  data-aos-duration="1500">
                 <img src="../img/Frame 21.png" alt="carrito">
+                
 
             </div>
             <hr width="240">
-            <div>
+            <div data-aos="flip-down" data-aos-duration="1500">
                 <img src="../img/Frame 20.png" alt="contacto">
 
             </div>
@@ -161,6 +163,10 @@
 
 
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

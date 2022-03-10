@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RedFarma.co</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="../img/favicon.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,10 +40,14 @@
 
             <section class="cotizacion__producto">
 
-                <div class="cotizacion__img">
-                    <img src="../img/remedio.png" alt="remedio">
-                </div>
+                <div data-aos="zoom-in">
+                    
+                    <div class="cotizacion__img">
+                        <img src="../img/remedio.png" alt="remedio">
+                    </div>
 
+                </div>
+                
                 <div class="cotizacion__detalle__producto">
                     <h2>ACETAMINOFEN</h2>
                     <p>Jarabe 160mg/5ml caja 90ml Genfar</p>
@@ -141,5 +146,9 @@
     
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
